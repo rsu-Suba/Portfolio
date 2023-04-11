@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" />
+<title>Portfolio</title>
+</head>
+<body> 
+    <div class="main">
+        <div class="top">
+            <span class="top-btn-1"></span>
+            <span class="top-btn-2"></span>
+            <span class="top-btn-3"></span>
+            <text>Here is a title text.</text>
+        </div>
+        <div class="mid">
+            <input id="block-01" type="checkbox" class="toggle">
+            <label class="Label" for="block-01">SNS</label>
+            <div class="content">
+                <div class="snscard">
+                    <a class="icon" href="https://twitter.com/rsu_Suba" target="_blank"><img src="https://seeklogo.com/images/T/twitter-icon-square-logo-108D17D373-seeklogo.com.png" alt="@rsu_Suba"></a>
+                    <a class="icon" href="https://www.instagram.com/suba_insta__/" target="_blank"><img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-square2-512.png" alt="@suba_insta__"></a>
+                    <a class="icon" href="https://github.com/rsu-Suba" target="_blank"><img src="https://exastro-suite.github.io/docs/asset/img/download_github.png" alt="@rsu-Suba"></a>
+                    <a class="icon" href="https://misskey.io/@rsu" target="_blank"><img src="https://raw.githubusercontent.com/misskey-dev/assets/main/icon.png" alt="@rsu"></a>
+                </div>
+            </div>
+            <input id="block-02" type="checkbox" class="toggle">
+            <label class="Label" for="block-02">Github Pages</label>
+            <div class="content">
+                <p></p>
+            </div>
+            <input id="block-03" type="checkbox" class="toggle">
+            <label class="Label" for="block-03">Blender</label>
+            <div class="content">
+                <p></p>
+            </div>
+        </div>
+        <div class="bottom"></div>
+    </div>
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+    .main{
+        position: absolute;
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        background-color: rgb(10, 86, 129);
+    font-family: 'Inter', sans-serif;
+    }
+.mid{
+    position: relative;
+    padding: 0 3.5vw;
+}
+.content{
+    position: relative;
+}
+.snscard{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #dce3e4;
+    margin: 6vw 4vw;
+    padding: 1vw 4vw;
+    border-radius: 8vw;
+}
+.snscard img{
+    position: relative;
+    border-radius: 4.7vw;
+    margin: 2.78vw;
+    height: 15vw;
+    width: 15vw;
+    object-fit: cover;
+    background-color: #5c9381;
+    box-shadow: #555 0.8vw 0.8vw 1.5vw;
+}
+.toggle {
+	display: none;
+}
+.Label {
+	padding: 2.8vh 4vh;
+    border-radius: 2.2vh;
+	display: block;
+    font-size:2.2vh;
+	color: #444;
+	background:#f3f3f3;
+}
+.Label::before{
+	content:"";
+	width: 6px;
+	height: 6px;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	-webkit-transform: rotate(45deg);
+	position: absolute;
+	top:calc( 50% - 3px );
+	right: 20px;
+	transform: rotate(135deg);
+}
+.Label,.content {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transform: translateZ(0);
+	transition: 0.4s;
+}
+.content {
+	height: 0;
+	margin-bottom:0.3vh;
+	overflow: hidden;
+}
+.toggle:checked + .Label + .content {
+	height: auto;
+	transition: 0.4s;
+}
+.toggle:checked + .Label::before {
+	transform: rotate(-45deg) !important;
+}
+</style>
+<script>
+</script>
+</html>
