@@ -298,19 +298,15 @@
                                 <text>Falling Among<br>3/17/2022</text>
                             </div>
                             <div class="blendercontentvideo-work">
-                                <a class="icon" href="./assets/Blender/Videos/Original/Geometry Blue Wave.mp4" target="_blank"><img src="./assets/Blender/Videos/Thumbnail/Geometry Blue Wave.jpg"/></a>
-                                <text>Geometry Wave<br>4/4/2022</text>
-                            </div>
-                            <div class="blendercontentvideo-work">
                                 <a class="icon" href="./assets/Blender/Videos/Original/GW dislike school.mp4" target="_blank"><img src="./assets/Blender/Videos/Thumbnail/GW dislike school.jpg"></a>
                                 <text>School in GW<br>5/2/2022</text>
                             </div>
-                        </div>
-                        <div class="blendercontentvideo-row">
                             <div class="blendercontentvideo-work">
                                 <a class="icon" href="./assets/Blender/Videos/Original/Pixel CM.mp4" target="_blank"><img src="./assets/Blender/Videos/Thumbnail/Pixel CM.jpg"/></a>
                                 <text>Pixel 4 CM<br>7/25/2022</text>
                             </div>
+                        </div>
+                        <div class="blendercontentvideo-row">
                             <div class="blendercontentvideo-work">
                                 <a class="icon" href="./assets/Blender/Videos/Original/Particle_Human.mp4" target="_blank"><img src="./assets/Blender/Videos/Thumbnail/Particle_Human.jpg"/></a>
                                 <text>Particle Human<br>11/27/2022</text>
@@ -319,19 +315,9 @@
                                 <a class="icon" href="./assets/Blender/Videos/Original/Dying_Paimon.mp4" target="_blank"><img src="./assets/Blender/Videos/Thumbnail/Dying_Paimon.jpg"></a>
                                 <text>Dying Paimon<br>11/28/2022</text>
                             </div>
-                        </div>
-                        <div class="blendercontentvideo-row">
                             <div class="blendercontentvideo-work">
                                 <a class="icon" href="./assets/Blender/Videos/Original/NightCastle.mp4" target="_blank"><img src="./assets/Blender/Videos/Thumbnail/NightCastle.jpg"/></a>
                                 <text>Castle in Night<br>1/10/2023</text>
-                            </div>
-                            <div class="blendercontentvideo-work">
-                                <a class="icon" href="" target="_blank"><img src="./assets/Blender/Pictures/Thumbnail/blankimg.png"/></a>
-                                <text></text>
-                            </div>
-                            <div class="blendercontentvideo-work">
-                                <a class="icon" href="" target="_blank"><img src="./assets/Blender/Pictures/Thumbnail/blankimg.png"></a>
-                                <text></text>
                             </div>
                         </div>
                     </div>
@@ -647,7 +633,7 @@ a{
     border-radius: 0;
 }
 .toggle2:checked + .blenderlabelbottom + .blendercontentsub{
-    height: 280vw;
+    height: 250vw;
     margin:0.4vh 0.2vh;
     border-radius: 0 0 2.6vh 2.6vh;
     transition: 1s;
@@ -664,57 +650,47 @@ a{
 .footer{
     width: 100%;
     position: fixed;
-    bottom: 1vh;
+    bottom: 1.3vh;
     margin: 0 auto;
     text-align: center;
 }
 
 .footer text{
     position: relative;
-    font-size: 1vh;
+    font-size: 1.5vh;
 }
 </style>
 <script>
     var bool1 = Boolean("");
     var bool2 = Boolean("");
     var bool3 = Boolean("");
-    var footer = document.getElementById("footertext");
     var content = document.getElementById("blendercontent");
     function toggle1(){
-        footer.textContent = "1 is clicked";
         if (bool1 == false){
             bool1 = Boolean("true");
-            footer.textContent = ("1 is on");
         }
         else if (bool1 == Boolean("true")){
             bool1 = Boolean("");
-            footer.textContent = ("1 is off");
         }
         changeheight();
     }
     
     function toggle2(){
-        footer.textContent = "2 is clicked";
         if (bool2 == false){
             bool2 = Boolean("true");
-            footer.textContent = ("2 is on");
         }
         else if (bool2 == Boolean("true")){
             bool2 = Boolean("");
-            footer.textContent = ("2 is off");
         }
         changeheight();
     }
 
     function toggle3(){
-        footer.textContent = "3 is clicked";
         if (bool3 == false){
             bool3 = Boolean("true");
-            footer.textContent = ("3 is on");
         }
         else if (bool3 == Boolean("true")){
             bool3 = Boolean("");
-            footer.textContent = ("3 is off");
         }
         changeheight();
     }
@@ -722,23 +698,18 @@ a{
     function changeheight(){
         if (bool3 == false){
             content.style.height = ("0vh");
-            footer.textContent = ("reset height");
         }
         else if (bool3 == Boolean("true")){
         if (bool1 == Boolean("true") && bool2 == Boolean("true")){
-            footer.textContent = ("Both are on");
-            content.style.height = ("750vw");
+            content.style.height = ("720vw");
         }
         else if (bool1 == false && bool2 == Boolean("true")){
-            footer.textContent = ("1 is off, 2 is on");
-            content.style.height = ("330vw");
+            content.style.height = ("300vw");
         }
         else if (bool1 == Boolean("true" && bool2 == false)){
-            footer.textContent = ("1 is on, 2 is off");
             content.style.height = ("470vw");
         }
         else if (bool1 == false && bool2 == false){
-            footer.textContent = ("Both are off");
             content.style.height = ("50vw");
         }
         }
