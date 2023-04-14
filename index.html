@@ -7,12 +7,6 @@
 </head>
 <body> 
     <div class="main">
-        <div class="top">
-            <span class="top-btn-1"></span>
-            <span class="top-btn-2"></span>
-            <span class="top-btn-3"></span>
-            <text>Here is a "not" finished.It's still made.<br>Here is made for phone.<br>If you are accessed from pc, Can't display correctly.</text>
-        </div>
         <div class="mid">
             <input id="block-01" type="checkbox" class="toggle">
             <label class="Label" for="block-01">SNS</label>
@@ -38,7 +32,7 @@
                         <a class="githublink" href="https://rsu-suba.github.io/RSP/" target="_blank">Rock, Scissors, Paper</a>
                         <a class="githublink" href="https://rsu-suba.github.io/Premiere-Countdown/" target="_blank">YouTube Premiere Countdown Clock</a>
                         <a class="githublink" href="https://rsu-suba.github.io/Windows3.1-Clock/" target="_blank">Windows 3.1 Clock</a>
-                        <a class="githublink" href="https://rsu-suba.github.io/Prime_Number_Checker/" target="_blank">Prime Number Checker</a>
+                        <a class="githublink-end" href="https://rsu-suba.github.io/Prime_Number_Checker/" target="_blank">Prime Number Checker</a>
                     </div>
                     <div class="linkallows">
                         <span class="allow"></span>
@@ -48,11 +42,11 @@
                     </div>
                 </div>
             </div>
-            <input id="block-03" type="checkbox" class="toggle">
+            <input id="block-03" type="checkbox" class="toggle" onclick="toggle3()">
             <label class="Label" for="block-03">Blender</label>
-            <div class="blendercontent">
+            <div class="blendercontent" id="blendercontent">
                 <div class="Blender">
-                    <input id="block-04" type="checkbox" class="toggle1">
+                    <input id="block-04" type="checkbox" class="toggle1" onclick="toggle1()">
                     <label class="blenderlabeltop" for="block-04">Picture</label>
                     <div class="blendercontentsub">
                         <text>12/1/2019-3/20/2023</text>
@@ -224,13 +218,129 @@
                             </div>
                         </div>
                     </div>
-                    <input id="block-05" type="checkbox" class="toggle2">
+                    <input id="block-05" type="checkbox" class="toggle2" onclick="toggle2()">
                     <label class="blenderlabelbottom" for="block-05">Video</label>
-                    <div class="blendercontentsub"><text>Here is a video</text></div>
+                    <div class="blendercontentsub">
+                        <text>12/13/2020-1/10/2023</text>
+                        <div class="blendercontentvideo-row">
+                            <div class="blendercontentvideo-work">
+                                <a class="icon" href="./assets/Blender/Videos/Original/Room-12_16_2020.mp4" target="_blank"><img src="./assets/Blender/Videos/Thumbnail/Room-12_16_2020.jpg"/></a>
+                                <text>Room2020<br>12/13/2020</text>
+                            </div>
+                            <div class="blendercontentvideo-work">
+                                <a class="icon" href="./assets/Blender/Videos/Original/iPhone-BlueHole.mp4" target="_blank"><img src="./assets/Blender/Videos/Thumbnail/iPhone-BlueHole.jpg"/></a>
+                                <text>iPhone Blue Hole<br>5/1/2021</text>
+                            </div>
+                            <div class="blendercontentvideo-work">
+                                <a class="icon" href="./assets/Blender/Videos/Original/LightSaver.mkv" target="_blank"><img src="./assets/Blender/Videos/Thumbnail/LightSaver.jpg"></a>
+                                <text>LightSaver<br>5/8/2021</text>
+                            </div>
+                        </div>
+                        <div class="blendercontentvideo-row">
+                            <div class="blendercontentvideo-work">
+                                <a class="icon" href="./assets/Blender/Videos/Original/OutRealLazer.mkv" target="_blank"><img src="./assets/Blender/Videos/Thumbnail/OutRealLazer.jpg"/></a>
+                                <text>Lazer Outside<br>5/28/2021</text>
+                            </div>
+                            <div class="blendercontentvideo-work">
+                                <a class="icon" href="./assets/Blender/Videos/Original/lv_0_20210625065938.mp4" target="_blank"><img src="./assets/Blender/Videos/Thumbnail/lv_0_20210625065938.jpg"></a>
+                                <text>Donut in world<br>6/18/2021</text>
+                            </div>
+                            <div class="blendercontentvideo-work">
+                                <a class="icon" href="./assets/Blender/Videos/Original/MelonMascotVFXHollar.mkv" target="_blank"><img src="./assets/Blender/Videos/Thumbnail/MelonMascotVFXHollar.jpg"/></a>
+                                <text>Melon Hollar<br>8/19/2021</text>
+                            </div>
+                        </div>
+                        <div class="blendercontentvideo-row">
+                            <div class="blendercontentvideo-work">
+                                <a class="icon" href="./assets/Blender/Videos/Original/MelonJump.mkv" target="_blank"><img src="./assets/Blender/Videos/Thumbnail/MelonJump.jpg"/></a>
+                                <text>Jumping Melon<br>10/21/2021</text>
+                            </div>
+                            <div class="blendercontentvideo-work">
+                                <a class="icon" href="./assets/Blender/Videos/Original/Twisting Crystals.mp4" target="_blank"><img src="./assets/Blender/Videos/Thumbnail/Twisting Crystals.png"/></a>
+                                <text>Twisting Crystals<br>11/2/2021</text>
+                            </div>
+                            <div class="blendercontentvideo-work">
+                                <a class="icon" href="./assets/Blender/Videos/Original/IntelParticle.mkv" target="_blank"><img src="./assets/Blender/Videos/Thumbnail/IntelParticle.jpg"/></a>
+                                <text>Intel Particle<br>11/8/2021</text>
+                            </div>
+                        </div>
+                        <div class="blendercontentvideo-row">
+                            <div class="blendercontentvideo-work">
+                                <a class="icon" href="./assets/Blender/Videos/Original/Dancing Human.mp4" target="_blank"><img src="./assets/Blender/Videos/Thumbnail/Dancing Human.jpg"/></a>
+                                <text>Dancing Human<br>11/14/2021</text>
+                            </div>
+                            <div class="blendercontentvideo-work">
+                                <a class="icon" href="./assets/Blender/Videos/Original/MelonCell.mp4" target="_blank"><img src="./assets/Blender/Videos/Thumbnail/MelonCell.jpg"></a>
+                                <text>Melon Cell<br>11/17/2021</text>
+                            </div>
+                            <div class="blendercontentvideo-work">
+                                <a class="icon" href="./assets/Blender/Videos/Original/TransitionColorful.mkv" target="_blank"><img src="./assets/Blender/Videos/Thumbnail/TransitionColorful.jpg"></a>
+                                <text>Transision #1<br>11/21/2022</text>
+                            </div>
+                        </div>
+                        <div class="blendercontentvideo-row">
+                            <div class="blendercontentvideo-work">
+                                <a class="icon" href="./assets/Blender/Videos/Original/MathMachine.mp4" target="_blank"><img src="./assets/Blender/Videos/Thumbnail/MathMachine.jpg"/></a>
+                                <text>MathMachine<br>11/28/2021</text>
+                            </div>
+                            <div class="blendercontentvideo-work">
+                                <a class="icon" href="./assets/Blender/Videos/Original/Snowball.mp4" target="_blank"><img src="./assets/Blender/Videos/Thumbnail/Snowball.jpg"/></a>
+                                <text>Snowball<br>12/29/2021</text>
+                            </div>
+                            <div class="blendercontentvideo-work">
+                                <a class="icon" href="./assets/Blender/Videos/Original/Motion Graphics Apple.mp4" target="_blank"><img src="./assets/Blender/Videos/Thumbnail/Motion Graphics Apple.jpg"></a>
+                                <text>Motion Graphics<br>3/6/2022</text>
+                            </div>
+                        </div>
+                        <div class="blendercontentvideo-row">
+                            <div class="blendercontentvideo-work">
+                                <a class="icon" href="./assets/Blender/Videos/Original/Falling Among us VFX.mp4" target="_blank"><img src="./assets/Blender/Videos/Thumbnail/Falling Among us VFX.jpg"/></a>
+                                <text>Falling Among<br>3/17/2022</text>
+                            </div>
+                            <div class="blendercontentvideo-work">
+                                <a class="icon" href="./assets/Blender/Videos/Original/Geometry Blue Wave.mp4" target="_blank"><img src="./assets/Blender/Videos/Thumbnail/Geometry Blue Wave.jpg"/></a>
+                                <text>Geometry Wave<br>4/4/2022</text>
+                            </div>
+                            <div class="blendercontentvideo-work">
+                                <a class="icon" href="./assets/Blender/Videos/Original/GW dislike school.mp4" target="_blank"><img src="./assets/Blender/Videos/Thumbnail/GW dislike school.jpg"></a>
+                                <text>School in GW<br>5/2/2022</text>
+                            </div>
+                        </div>
+                        <div class="blendercontentvideo-row">
+                            <div class="blendercontentvideo-work">
+                                <a class="icon" href="./assets/Blender/Videos/Original/Pixel CM.mp4" target="_blank"><img src="./assets/Blender/Videos/Thumbnail/Pixel CM.jpg"/></a>
+                                <text>Pixel 4 CM<br>7/25/2022</text>
+                            </div>
+                            <div class="blendercontentvideo-work">
+                                <a class="icon" href="./assets/Blender/Videos/Original/Particle_Human.mp4" target="_blank"><img src="./assets/Blender/Videos/Thumbnail/Particle_Human.jpg"/></a>
+                                <text>Particle Human<br>11/27/2022</text>
+                            </div>
+                            <div class="blendercontentvideo-work">
+                                <a class="icon" href="./assets/Blender/Videos/Original/Dying_Paimon.mp4" target="_blank"><img src="./assets/Blender/Videos/Thumbnail/Dying_Paimon.jpg"></a>
+                                <text>Dying Paimon<br>11/28/2022</text>
+                            </div>
+                        </div>
+                        <div class="blendercontentvideo-row">
+                            <div class="blendercontentvideo-work">
+                                <a class="icon" href="./assets/Blender/Videos/Original/NightCastle.mp4" target="_blank"><img src="./assets/Blender/Videos/Thumbnail/NightCastle.jpg"/></a>
+                                <text>Castle in Night<br>1/10/2023</text>
+                            </div>
+                            <div class="blendercontentvideo-work">
+                                <a class="icon" href="" target="_blank"><img src="./assets/Blender/Pictures/Thumbnail/blankimg.png"/></a>
+                                <text></text>
+                            </div>
+                            <div class="blendercontentvideo-work">
+                                <a class="icon" href="" target="_blank"><img src="./assets/Blender/Pictures/Thumbnail/blankimg.png"></a>
+                                <text></text>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="bottom"></div>
+        <div class="footer">
+            <text class="footertext" id="footertext">rsu@Suba : 4/15/2023</text>
+        </div>
     </div>
 </body>
 <style>
@@ -255,19 +365,18 @@
 	overflow: hidden;
     position: relative;
     height: 0;
-    width: 99%;
 	background:#f3f3f3;
-    margin: 0 auto;
+    margin:0.2vh;
 }
 
 .blendercontentsub text{
     font-size: 3.4vw;
     text-align: center;
-    margin: 3.1vw auto 0 auto;
+    margin: 3vw auto 0 auto;
     position: relative;
 }
 
-    .blendercontentpicture-row{
+    .blendercontentpicture-row,.blendercontentvideo-row{
         justify-content: space-evenly;
         display: flex;
     flex-direction: row;
@@ -276,7 +385,7 @@
     height: auto;
     width: auto;
     }
-    .blendercontentpicture-work {
+    .blendercontentpicture-work,.blendercontentvideo-work{
         text-align: center;
         display: flex;
     flex-direction: column;
@@ -286,7 +395,7 @@
     width: auto;
     margin:3vw 0;
 }
-    .blendercontentpicture-work img{
+    .blendercontentpicture-work img,.blendercontentvideo-work img{
     position: relative;
     height: 18vw;
     width: 18vw;
@@ -295,7 +404,7 @@
     object-fit: cover;
     }
 
-    .blendercontentpicture-work text{
+    .blendercontentpicture-work text,.blendercontentvideo-work text{
         font-size: 2.5vw;
     }
 
@@ -310,7 +419,7 @@ body{
         left: 0;
         right: 0;
         bottom: 0;
-        height: 100%;
+        height: 9%;
         margin: 0 auto;
     font-family: 'Inter', sans-serif;
     }
@@ -321,10 +430,11 @@ a{
 }
 
 .mid{
-    position: relative;
-    padding: 0 3.5vw;
-    top: 2vh;
-        width: 93vw;
+    margin: 2.2vh auto 0 auto;
+    position: absolute;
+    top: 1.8vh;
+    left: 7.5vw;
+        width: 85vw;
 }
 .snscard{
     position: relative;
@@ -332,8 +442,8 @@ a{
     justify-content: center;
     display: flex;
     background-color: #ededed;
-    margin: 3vh 4vw;
-    padding: 0.6vw 4vw;
+    margin: 6vw 0.8vw;
+    padding: 0.6vw 3vw;
     border-radius: 8vw;
     border:1.96px solid #999;
 }
@@ -352,7 +462,7 @@ a{
 .githubpages{
     overflow: hidden;
     background-color: #fdfdfd;
-    width :84vw;
+    width :84%;
     height: auto;
     position: relative;
     margin: 3.4vh auto;
@@ -374,11 +484,11 @@ a{
     width: 2.7vh;
     height: 2.7vh;
     position: relative;
-    margin: 0.8175vh 0.85vh;
+    margin: 0.85vh 0.85vh;
     border-radius: 0.6vh;
 }
 
-.githublink{
+.githublink,.githublink-end{
     top: 0.1vh;
     white-space: nowrap;
     font-size: 1.5vh;
@@ -402,10 +512,10 @@ a{
 .githublink::after{
     content: "";
     position: absolute;
-    left: -2vw;
-    bottom: 0;
-    width: 5.4vh;
-    border-bottom: 2px solid #fff;
+    left: 0;
+    bottom: -0.2vh;
+    width: 4.4vh;
+    border-bottom: 5px solid #fff;
 }
 
 .linkallows{
@@ -443,33 +553,33 @@ a{
 .blenderlabeltop {
     position: relative;
 	padding: 2.6vh 4vh;
-    margin: 0.2vh;
     border-radius: 2.6vh 2.6vh 0 0;
 	display: block;
     font-size:2.2vh;
 	color: #444;
 	background:#f3f3f3;
+    margin: 0.2vh;
 }
 .blenderlabelbottom{
     position: relative;
 	padding: 2.6vh 4vh;
-    margin: 0.2vh;
     border-radius: 0 0 2.6vh 2.6vh;
 	display: block;
     font-size:2.2vh;
 	color: #444;
 	background:#f3f3f3;
+    margin: 0.2vh;
 }
 .blenderlabeltop::before,.blenderlabelbottom::before{
 	content:"";
-	width: 6px;
-	height: 6px;
-	border-top: 2px solid #444;
-	border-right: 2px solid #444;
+	width: 0.8vh;
+	height: 0.8vh;
+	border-top: 0.25vh solid #444;
+	border-right: 0.25vh solid #444;
 	-webkit-transform: rotate(45deg);
 	position: absolute;
-	top:calc( 50% - 5px );
-	right: 20px;
+    right: 3vh;
+    top: 41%;
 	transform: rotate(135deg);
     transition: 0.3s;
 }
@@ -485,6 +595,7 @@ a{
 }
 .Label{
 	padding: 2.8vh 4vh;
+    margin: 0.5vh 0;
     border-radius: 2.2vh;
 	display: block;
     font-size:2.2vh;
@@ -493,57 +604,144 @@ a{
 }
 .Label::before{
 	content:"";
-	width: 6px;
-	height: 6px;
-	border-top: 2px solid #444;
-	border-right: 2px solid #444;
+	width: 0.8vh;
+	height: 0.8vh;
+	border-top: 0.25vh solid #444;
+	border-right: 0.25vh solid #444;
 	-webkit-transform: rotate(45deg);
 	position: absolute;
-	top:calc( 50% - 3px );
-	right: 20px;
+    right: 3vh;
+    top: 41%;
 	transform: rotate(135deg);
     transition: 0.3s;
 }
-.Label,.snscontent,.githubcontent,.blendercontent,.blenderlabeltop,.blenderlabelbottom,.blendercontentsub{
+.Label,.snscontent,.githubcontent,.blenderlabeltop,.blenderlabelbottom{
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	transform: translateZ(0);
 	transition: 0.4s;
 }
 .snscontent,.githubcontent,.blendercontent{
-	height: 0;
+	height: 0vw;
 	margin-bottom:0.15vh;
+    transition: 0.5s;
 	overflow: hidden;
 }
 .toggle:checked + .Label + .snscontent{
-    height: 8.1vh;
+    height: 34.8vw;
 }
 .toggle:checked + .Label + .githubcontent{
     height: 24.4vh;
 }
 .toggle:checked + .Label + .blendercontent{
-    height: auto;
+    height: 50vw;
+    transition: 0.5s;
 }
+
 .toggle1:checked + .blenderlabeltop + .blendercontentsub{
-    height: 226vh;
-    margin: 0.4vh auto;
+    height: 420vw;
+    margin:0.4vh 0.2vh;
+    transition: 1s;
 }
 .toggle2:checked + .blenderlabelbottom{
     border-radius: 0;
 }
 .toggle2:checked + .blenderlabelbottom + .blendercontentsub{
-    height: 10vh;
-    margin: 0.4vh auto;
+    height: 280vw;
+    margin:0.4vh 0.2vh;
     border-radius: 0 0 2.6vh 2.6vh;
+    transition: 1s;
 }
-.toggle:checked + .Label + .snscontent,.toggle:checked + .Label + .githubcontent,.toggle:checked + .Label + .blendercontent,.toggle1:checked + .blenderlabeltop + .blendercontentsub,.toggle2:checked + .blenderlabelbottom + .blendercontentsub{
+
+.toggle:checked + .Label + .snscontent,.toggle:checked + .Label + .githubcontent,.toggle2:checked + .blenderlabelbottom + .blendercontentsub{
 	transition: 0.5s;
 }
 .toggle:checked + .Label::before,.toggle1:checked + .blenderlabeltop::before,.toggle2:checked + .blenderlabelbottom::before{
 	transform: rotate(-45deg) !important;
     transition: 0.3s;
 }
+
+.footer{
+    width: 100%;
+    position: fixed;
+    bottom: 1vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer text{
+    position: relative;
+    font-size: 1vh;
+}
 </style>
 <script>
+    var bool1 = Boolean("");
+    var bool2 = Boolean("");
+    var bool3 = Boolean("");
+    var footer = document.getElementById("footertext");
+    var content = document.getElementById("blendercontent");
+    function toggle1(){
+        footer.textContent = "1 is clicked";
+        if (bool1 == false){
+            bool1 = Boolean("true");
+            footer.textContent = ("1 is on");
+        }
+        else if (bool1 == Boolean("true")){
+            bool1 = Boolean("");
+            footer.textContent = ("1 is off");
+        }
+        changeheight();
+    }
+    
+    function toggle2(){
+        footer.textContent = "2 is clicked";
+        if (bool2 == false){
+            bool2 = Boolean("true");
+            footer.textContent = ("2 is on");
+        }
+        else if (bool2 == Boolean("true")){
+            bool2 = Boolean("");
+            footer.textContent = ("2 is off");
+        }
+        changeheight();
+    }
+
+    function toggle3(){
+        footer.textContent = "3 is clicked";
+        if (bool3 == false){
+            bool3 = Boolean("true");
+            footer.textContent = ("3 is on");
+        }
+        else if (bool3 == Boolean("true")){
+            bool3 = Boolean("");
+            footer.textContent = ("3 is off");
+        }
+        changeheight();
+    }
+
+    function changeheight(){
+        if (bool3 == false){
+            content.style.height = ("0vh");
+            footer.textContent = ("reset height");
+        }
+        else if (bool3 == Boolean("true")){
+        if (bool1 == Boolean("true") && bool2 == Boolean("true")){
+            footer.textContent = ("Both are on");
+            content.style.height = ("750vw");
+        }
+        else if (bool1 == false && bool2 == Boolean("true")){
+            footer.textContent = ("1 is off, 2 is on");
+            content.style.height = ("330vw");
+        }
+        else if (bool1 == Boolean("true" && bool2 == false)){
+            footer.textContent = ("1 is on, 2 is off");
+            content.style.height = ("470vw");
+        }
+        else if (bool1 == false && bool2 == false){
+            footer.textContent = ("Both are off");
+            content.style.height = ("50vw");
+        }
+        }
+    }
 </script>
 </html>
