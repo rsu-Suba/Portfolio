@@ -5,7 +5,7 @@
 	display: none;
 }
 body{
-    background-color: rgb(171, 208, 205);
+    background-color: rgb(21, 24, 24)
 }
 
 @media screen and (orientation: portrait) {
@@ -116,18 +116,18 @@ a{
     background-color: #ededed;
     margin: 0 auto;
     top: 7.4vw;
-    width: 72vw;
-    height: 18vw;
-    border-radius: 6.2vw;
+    width: 80vw;
+    height: 22vw;
+    border-radius: 7.6vw;
     border:1.96px solid #999;
 }
 .snscard img{
     position: relative;
     top:0.1vh;
     border-radius: 4vw;
-    margin: 2.96vw;
-    height: 12vw;
-    width: 12vw;
+    margin: 2.55vw;
+    height: 14vw;
+    width: 14vw;
     object-fit: cover;
     background-color: #5c9381;
     box-shadow: #333 0.4vw 0.4vw 1.3vw;
@@ -299,7 +299,7 @@ a{
 	overflow: hidden;
 }
 .toggle:checked + .Label + .snscontent{
-    height: 34.8vw;
+    height: 38vw;
 }
 .toggle:checked + .Label + .githubcontent{
     height: 24.4vh;
@@ -460,10 +460,10 @@ a{
 .snscard img{
     position: relative;
     top:0.1vh;
-    border-radius: 2vw;
-    margin: 0.9vw;
-    height: 6vw;
-    width: 6vw;
+    border-radius: 1.8vw;
+    margin: 1.2vw;
+    height: 5.5vw;
+    width: 5.5vw;
     object-fit: cover;
     background-color: #5c9381;
     box-shadow: #333 0.15vw 0.15vw 0.9vw;
