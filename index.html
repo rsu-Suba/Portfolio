@@ -320,6 +320,7 @@
                                 <text>Castle in Night<br>1/10/2023</text>
                             </div>
                         </div>
+                        <!--Ambient mode of YouTube code from here "https://codepen.io/vaibhav-khating/pen/Vwdqzbm"-->
                     </div>
                 </div>
             </div>
@@ -331,6 +332,13 @@
 </body>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+    
+
+    .toggle,.toggle1,.toggle2 {
+	display: none;
+}
+
+@media screen and (orientation: portrait) {
 .top text{
     font-size: 3.4vw;
     position: fixed;
@@ -344,6 +352,18 @@
     width: 100vw;
 }
 
+.footer{
+    width: 100vw;
+    position: fixed;
+    bottom: 1.3vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer text{
+    position: relative;
+    font-size: 1.5vh;
+}
 
 .blendercontentsub {
         display: flex;
@@ -576,9 +596,6 @@ a{
 	transition: 0.4s;
 }
 
-.toggle,.toggle1,.toggle2 {
-	display: none;
-}
 .Label{
 	padding: 2.8vh 4vh;
     margin: 0.5vh 0;
@@ -647,17 +664,6 @@ a{
     transition: 0.3s;
 }
 
-.footer{
-    width: 100vw;
-    position: fixed;
-    bottom: 1.3vh;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.footer text{
-    position: relative;
-    font-size: 1.5vh;
 }
 </style>
 <script>
