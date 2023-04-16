@@ -7,6 +7,19 @@
 body{
     background-color: rgb(21, 24, 24)
 }
+.footer{
+    width: 100vw;
+    position: fixed;
+    bottom: 1.3vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer text{
+color: white;
+    position: relative;
+    font-size: 1.5vh;
+}
 
 .footer{
     width: 100vw;
@@ -34,7 +47,6 @@ body{
     background-color: yellow;
     width: 100vw;
 }
-
 
 .blendercontentsub {
         display: flex;
