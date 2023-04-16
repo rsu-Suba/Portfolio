@@ -8,6 +8,19 @@ body{
     background-color: rgb(21, 24, 24)
 }
 
+.footer{
+    width: 100vw;
+    position: fixed;
+    bottom: 1.3vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer text{
+    color: white;
+    position: relative;
+    font-size: 1.5vh;
+}
 @media screen and (orientation: portrait) {
 .top text{
     font-size: 3.4vw;
@@ -22,18 +35,6 @@ body{
     width: 100vw;
 }
 
-.footer{
-    width: 100vw;
-    position: fixed;
-    bottom: 1.3vh;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.footer text{
-    position: relative;
-    font-size: 1.5vh;
-}
 
 .blendercontentsub {
         display: flex;
@@ -351,20 +352,6 @@ a{
     background-color: yellow;
     width: 100vw;
 }
-
-.footer{
-    width: 100vw;
-    position: fixed;
-    bottom: 1.3vh;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.footer text{
-    position: relative;
-    font-size: 1.5vh;
-}
-
 .blendercontentsub {
         display: flex;
     flex-direction: column;
