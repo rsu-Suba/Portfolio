@@ -27,7 +27,9 @@ body{
 #blurred{
   position: absolute;
   align-self: center;
-  width: 1000%;
+  -webkit-filter: blur(4vw);
+  filter: blur(4vw);
+  width: 150%;
   opacity: 0.9;
 }
 .container{
@@ -68,8 +70,8 @@ body{
   #blurred{
     position: absolute;
     align-self: center;
-    filter: blur(5vw);
     -webkit-filter: blur(5vw);
+    filter: blur(5vw);
     width: 90vw;
     opacity: 0.8;
   }
