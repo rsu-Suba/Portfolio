@@ -26,6 +26,7 @@ body{
   position: absolute;
   align-self: center;
   filter: blur(6vw);
+  -webkit-filter: blur(6vw);
   width: 135vw;
   opacity: 0.8;
 }
@@ -67,6 +68,7 @@ body{
     position: absolute;
     align-self: center;
     filter: blur(3vw);
+    -webkit-filter: blur(3vw);
     width: 90vw;
     opacity: 0.8;
   }
