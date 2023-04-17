@@ -200,7 +200,7 @@ a{
     content: "";
     position: absolute;
     left: 0;
-    bottom: -0.3vh;
+    bottom: -0.1vh;
     width: 5vh;
     border-bottom: 5px solid #fff;
 }
@@ -523,7 +523,7 @@ a{
     content: "";
     position: absolute;
     left: 0;
-    bottom: -0.2vh;
+    bottom: -0.1vh;
     width: 4.4vh;
     border-bottom: 5px solid #fff;
 }
