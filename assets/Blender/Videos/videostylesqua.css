@@ -19,35 +19,28 @@ body{
   width: 100%;
   background: #000;
   position: fixed;
+  top: 0;
+  bottom: 0;
 }
 #blurred{
   position: absolute;
   align-self: center;
-  filter: blur(100px);
-  width: 125vw;
+  filter: blur(6vw);
+  width: 135vw;
   opacity: 0.8;
 }
 .container{
-  width: 75vh;
+  width: 85vw;
   margin: 3vh;
   user-select: none;
   overflow: hidden;
-  border-radius: 2vw;
+  border-radius: 4vw;
   background: #000;
   position: relative;
   box-shadow: 0 0 5vw rgba(0, 0, 0, 0.6);
 }
 .container video{
   width: 100%;
-}
-.blur{
-  width: 150%;
-  height: 150%;
-  background-color: rgba(0,0, 0, 0.5);
-  filter: blur(25px);
-  position: absolute;
-  left: 0;
-  top: 0;
 }
 }
 
@@ -67,12 +60,14 @@ body{
     width: 100vw;
     background: #000;
     position: fixed;
+    top: 0;
+    bottom: 0;
   }
   #blurred{
     position: absolute;
     align-self: center;
-    filter: blur(100px);
-    width: 125vh;
+    filter: blur(3vw);
+    width: 90vw;
     opacity: 0.8;
   }
   .container{
@@ -80,7 +75,7 @@ body{
     margin: 2vh;
     user-select: none;
     overflow: hidden;
-    border-radius: 1.5vw;
+    border-radius: 3.5vw;
     background: #000;
     position: relative;
     box-shadow: 0 0 5vw rgba(0, 0, 0, 0.6);
@@ -88,15 +83,6 @@ body{
   .container video{
     width: 100%;
   } 
-  .blur{
-    width: 150%;
-    height: 150%;
-    background-color: rgba(0,0, 0, 0.5);
-    filter: blur(25px);
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
   }
   
   
