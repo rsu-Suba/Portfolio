@@ -15,7 +15,7 @@ body{
     text-align: center;
 }
 
-.footer text{
+.footer a{
 color: white;
     position: relative;
     font-size: 1.5vh;
@@ -148,7 +148,7 @@ a{
 
 .githubpages{
     overflow: hidden;
-    background-color: #fdfdfd;
+	background:#f3f3f3;
     width :84%;
     height: auto;
     position: relative;
@@ -202,7 +202,7 @@ a{
     left: 0;
     bottom: -0.1vh;
     width: 5vh;
-    border-bottom: 5px solid #fff;
+    border-bottom: 5px solid #f3f3f3;
 }
 
 .linkallows{
