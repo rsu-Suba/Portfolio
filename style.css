@@ -16,9 +16,10 @@ body{
 }
 
 .footer a{
-color: white;
+    color: #8ab4f8;
     position: relative;
     font-size: 1.5vh;
+    text-decoration: underline;
 }
 
 .footer{
