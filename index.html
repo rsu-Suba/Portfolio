@@ -1,0 +1,171 @@
+<!--4/12/2023-11/12/2023-->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="new">
+        <img class="backgroundimage" id="backgroundimage" src="./assets/Background.png"/>
+        <div class="menu">
+            <div class="menusub-clicked" id="sns" onclick="menuclick(0);">
+                <img src="https://icons.iconarchive.com/icons/icons8/windows-8/256/Social-Networks-Twitter-icon.png"/>
+                <text>SNS</text>
+            </div>
+            <div class="menusub" id="github" onclick="menuclick(1);">
+                <img src="https://cdn.icon-icons.com/icons2/2389/PNG/512/github_logo_icon_145252.png"/>
+                <text>Github</text>
+            </div>
+            <div class="menusub" id="blender" onclick="menuclick(2);">
+                <img src="https://cdn.icon-icons.com/icons2/2248/PNG/512/blender_software_icon_136883.png"/>
+                <text>Blender</text>
+            </div>
+        </div>
+        <div class="sns" id="snstab">
+            <div class="twitter">
+                <img src="https://seeklogo.com/images/T/twitter-icon-square-logo-108D17D373-seeklogo.com.png" alt="@rsu_Pixel">
+                <a class="snslink" href="https://twitter.com/rsuOvO" target="_blank">Twitter</a>
+                <span class="allow"></span>
+            </div>
+            <div class="instagram">
+                <img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-square2-512.png" alt="@rsu_pixel">
+                <a class="snslink" href="https://www.instagram.com/rsu_pro" target="_blank">Instagram</a>
+                <span class="allow"></span>
+            </div>
+            <div class="github">
+                <img src="https://exastro-suite.github.io/docs/asset/img/download_github.png" alt="@rsu-Suba">
+                <a class="snslink" href="https://github.com/rsu-Suba" target="_blank">Github</a>
+                <span class="allow"></span>
+            </div>
+            <div class="bluesky">
+                <img src="https://img.utdstc.com/icon/468/938/468938e0afb0558b0dc0c0a4a226cb11b6080449081e07dc45190c24e39a3750" alt="@rsu"></a>
+                <a class="snslink" href="https://bsky.app/profile/rsu.bsky.social" target="_blank">Bluesky</a>
+                <span class="allow"></span>
+            </div>
+        </div>
+        <div class="githubtabhide-right" id="githubtab">
+            <div class="githubtab-row">
+                <div class="githubtab-piece">
+                    <img class="gitpixel" src="./assets/GithubPages_Icon/Pixel-shot.png"></img>
+                    <text>Pixel Camera Unit</text>
+                    <a href="https://rsu-suba.github.io/PixelCameraUnit/" target="_blank"></a>
+                </div>
+                <div class="githubtab-piece">
+                    <img class="gitpnc" src="./assets/GithubPages_Icon/pnc-shot.png"></img>
+                    <text>Prime Number Checker</text>
+                    <a href="https://rsu-suba.github.io/Prime_Number_Checker/" target="_blank"></a>
+                </div>
+            </div>
+            <div class="githubtab-row">
+                <div class="githubtab-piece">
+                    <img class="gitrsp" src="./assets/GithubPages_Icon/RSP-shot.png"></img>
+                    <text>Rock-Scissor-Paper</text>
+                    <a href="https://rsu-suba.github.io/RSP/" target="_blank"></a>
+                </div>
+                <div class="githubtab-piece">
+                    <img class="gitpremiere" src="./assets/GithubPages_Icon/Premiere-shot.png"></img>
+                    <text>YT Premiere Clock</text>
+                    <a href="https://rsu-suba.github.io/Premiere-Countdown/" target="_blank"></a>
+                </div>
+            </div>
+            <div class="githubtab-row">
+                <div class="githubtab-piece">
+                    <img class="gitjhs" src="./assets/GithubPages_Icon/iPhoneGame-shot.png"></img>
+                    <text>iPhone Camera Game</text>
+                    <a href="https://rsu-suba.github.io/Pixel-Ball-Game/" target="_blank"></a>
+                </div>
+                <div class="githubtab-piece">
+                    <img class="gitjhs" src="./assets/GithubPages_Icon/Utah-shot.png"></img>
+                    <text>Utah Teapot</text>
+                    <a href="https://rsu-suba.github.io/Utah-teapot/" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div class="blendertab-container-hide-2" id="blendertab-container">
+            <div class="blendertab-shadow" id="blendertab-shadow"></div>
+            <text class="blendertab-text" id="blendertab-text">Blender : 12/1/2019 - 11/19/2023</text>
+            <div class="blendertab" id="blendertab">
+                <img src="./assets/Blender/Pictures/Thumbnail/blankimg.png" class="blenderblank" id="blendertop">
+                <img src="./assets/Blender/Pictures/Thumbnail/WhiteBox-t.png" onclick="imgclick('WhiteBox.png', 0, 'White Box', '12/1/2019')">
+                <img src="./assets/Blender/Pictures/Thumbnail/Room8K-t.jpg" onclick="imgclick('Room8K.jpg', 1, 'Room2020 8K', '12/14/2020')">
+                <video src="./assets/Blender/Videos/Original/Room-12_16_2020.mp4" poster="./assets/Blender/Videos/Thumbnail/Room-12_16_2020.jpg" muted autoplay playsinline loop onclick="vidclick('Room-12_16_2020.mp4', 1, 'Room2020 8K', '12/15/2020')"></video>
+                <img src="./assets/Blender/Pictures/Thumbnail/Keyboard-t.png" onclick="imgclick('Keyboard.png', 0, 'Keyboard', '2/21/2021')">
+                <img src="./assets/Blender/Pictures/Thumbnail/iPhone5_2-t.png" onclick="imgclick('iPhone5_2.png', 0, 'iPhone 5', '4/21/2021')">
+                <img src="./assets/Blender/Pictures/Thumbnail/untitled-t.png" onclick="imgclick('untitled.png', 0, 'iPhone 5C', '5/12/2021')">
+                <video src="./assets/Blender/Videos/Original/iPhone5C-CM.mkv" poster="./assets/Blender/Videos/Thumbnail/iPhone5C.jpg" muted autoplay playsinline loop onclick="vidclick('iPhone5C-CM.mkv', 1, 'iPhone 5C', '5/15/2021')"></video>
+                <video src="./assets/Blender/Videos/Original/20210522.mkv" poster="./assets/Blender/Videos/Thumbnail/imac.jpg" muted autoplay playsinline loop onclick="vidclick('20210522.mkv', 0, 'iMac', '5/22/2021')"></video>
+                <img src="./assets/Blender/Pictures/Thumbnail/20210523-t.jpg" onclick="imgclick('20210523.jpg', 0, 'iPhone 12 Pro Purple', '5/23/2021')">
+                <video src="./assets/Blender/Videos/Original/MathMachine.mp4" poster="./assets/Blender/Videos/Thumbnail/MathMachine.jpg" muted autoplay playsinline loop onclick="vidclick('MathMachine.mp4', 0, 'MathMachine', '5/25/2021')"></video>
+                <video src="./assets/Blender/Videos/Original/iPhone-BlueHole.mp4" poster="./assets/Blender/Videos/Thumbnail/iPhone-BlueHole.jpg" muted autoplay playsinline loop onclick="vidclick('iPhone-BlueHole.mp4', 1, 'iPhone Blue hole', '5/27/2021')"></video>
+                <video src="./assets/Blender/Videos/Original/LazerHall.mkv" poster="./assets/Blender/Videos/Thumbnail/LazerHallRed.jpg" muted autoplay playsinline loop onclick="vidclick('LazerHall.mkv', 1, 'Lazer', '6/1/2021')"></video>
+                <video src="./assets/Blender/Videos/Original/LazerHall Bill.mkv" poster="./assets/Blender/Videos/Thumbnail/LazerHall.jpg" muted autoplay playsinline loop onclick="vidclick('LazerHall Bill.mkv', 1, 'Lazer billding', '6/5/2021')"></video>
+                <img src="./assets/Blender/Pictures/Thumbnail/20210619-t.png" onclick="imgclick('20210619.png', 1, 'Donut', '6/19/2021')">
+                <img src="./assets/Blender/Pictures/Thumbnail/20210620-t.jpg" onclick="imgclick('20210620.jpg', 1, 'Donut in Real', '6/20/2021')">
+                <video src="./assets/Blender/Videos/Original/LightSaver.mp4" poster="./assets/Blender/Videos/Thumbnail/LightSaver.jpg" muted autoplay playsinline loop onclick="vidclick('LightSaver.mp4', 2, 'LightSaver', '6/29/2021')"></video>
+                <img src="./assets/Blender/Pictures/Thumbnail/Melon-t.png" onclick="imgclick('Melon.png', 1, 'Melon Realistic', '8/23/2021')">
+                <img src="./assets/Blender/Pictures/Thumbnail/DruggerAmongUs-t.png" onclick="imgclick('DruggerAmongUs.png', 0, 'Drugger Among us', '9/3/2021')">
+                <img src="./assets/Blender/Pictures/Thumbnail/iPhone13-t.png" onclick="imgclick('iPhone13.png', 0, 'iPhone 13', '9/13/2021')">
+                <img src="./assets/Blender/Pictures/Thumbnail/Classroom_ABC-t.jpeg" onclick="imgclick('Classroom_ABC.jpeg', 1, 'Classroom ABC', '9/21/2021')">
+                <video src="./assets/Blender/Videos/Original/MelonJump.mp4" poster="./assets/Blender/Videos/Thumbnail/MelonJump.jpg" muted autoplay playsinline loop onclick="vidclick('MelonJump.mp4', 1, 'Jumping Melon', '10/20/2021')"></video>
+                <video src="./assets/Blender/Videos/Original/MelonCell.mp4" poster="./assets/Blender/Videos/Thumbnail/MelonCell.jpg" muted autoplay playsinline loop onclick="vidclick('MelonCell.mp4', 1, 'Melon cell', '10/25/2021')"></video>
+                <img src="./assets/Blender/Pictures/Thumbnail/Twisting Crystals-t.png" onclick="imgclick('Twisting Crystals.png', 1, 'Twisting Crystal', '10/31/2021')">
+                <video src="./assets/Blender/Videos/Original/Twisting Crystals.mp4" poster="./assets/Blender/Videos/Thumbnail/Twisting Crystals.png" muted autoplay playsinline loop onclick="vidclick('Twisting Crystals.mp4', 1, 'Twisting Crystal', '10/31/2021')"></video>
+                <img src="./assets/Blender/Pictures/Thumbnail/Water_Block-t.png" onclick="imgclick('Water_Block.png', 0, 'Water Block', '11/10/2021')">
+                <img src="./assets/Blender/Pictures/Thumbnail/Apple Water  2tone Light-t.png" onclick="imgclick('Apple Water  2tone Light.png', 0, 'Apple Water Logo', '12/30/2021')">
+                <img src="./assets/Blender/Pictures/Thumbnail/SnowMan-t.png" onclick="imgclick('SnowMan.png', 2, 'Snowman', '1/16/2021')">
+                <img src="./assets/Blender/Pictures/Thumbnail/House Color-t.png" onclick="imgclick('House Color.png', 0, 'House', '3/7/2022')">
+                <img src="./assets/Blender/Pictures/Thumbnail/Computer Room-t.png" onclick="imgclick('Computer Room.png', 0, 'Computer Room', '3/8/2022')">
+                <img src="./assets/Blender/Pictures/Thumbnail/Pink Donut-t.png" onclick="imgclick('Pink Donut.png', 0, 'Pink Donut', '3/9/2022')">
+                <img src="./assets/Blender/Pictures/Thumbnail/Old Hotel-01-t.jpg" onclick="imgclick('Old Hotel-01.jpg', 3, 'Old Hotel', '3/14/2022')">
+                <img src="./assets/Blender/Pictures/Thumbnail/Afternoon Pool-t.png" onclick="imgclick('Afternoon Pool.png', 0, 'Afternoon Pool', '3/19/2022')">
+                <video src="./assets/Blender/Videos/Original/TransitionColorful.mkv" poster="./assets/Blender/Videos/Thumbnail/TransitionColorful.jpg" muted autoplay playsinline loop onclick="vidclick('TransitionColorful.mkv', 1, 'Transition', '3/21/2022')"></video>
+                <video src="./assets/Blender/Videos/Original/Motion Graphics Apple.mp4" poster="./assets/Blender/Videos/Thumbnail/Motion Graphics Apple.jpg" muted autoplay playsinline loop onclick="vidclick('Motion Graphics Apple.mp4', 1, 'Motion Graphics', '3/27/2022')"></video>
+                <img src="./assets/Blender/Pictures/Thumbnail/Periscope3-t.png" onclick="imgclick('Periscope3.png', 1, 'Periscope', '4/3/2022')">
+                <img src="./assets/Blender/Pictures/Thumbnail/iPhone5C_2022-t.png" onclick="imgclick('iPhone5C_2022.png', 0, 'iPhone 5C Remake', '4/15/2022')">
+                <img src="./assets/Blender/Pictures/Thumbnail/MacBook Air-t.png" onclick="imgclick('MacBook Air.png', 0, 'MacBook Air', '4/17/2022')">
+                <img src="./assets/Blender/Pictures/Thumbnail/CRT Monitor-t.jpg" onclick="imgclick('CRT Monitor.jpg', 0, 'CRT Monitor', '4/21/2022')">
+                <video src="./assets/Blender/Videos/Original/GW dislike school.mp4" poster="./assets/Blender/Videos/Thumbnail/GW dislike school.jpg" muted autoplay playsinline loop onclick="vidclick('GW dislike school.mp4', 1, 'GW School', '5/5/2022')"></video>
+                <img src="./assets/Blender/Pictures/Thumbnail/Backroom 2-t.png" onclick="imgclick('Backroom 2.png', 0, 'Backroom', '6/5/2022')">
+                <img src="./assets/Blender/Pictures/Thumbnail/Pixel 1-t.png" onclick="imgclick('Pixel 1.png', 0, 'Pixel 4', '7/14/2022')">
+                <video src="./assets/Blender/Videos/Original/Pixel CM.mp4" poster="./assets/Blender/Videos/Thumbnail/PixelCM.jpg" muted autoplay playsinline loop onclick="vidclick('Pixel CM.mp4', 0, 'Pixel 4', '7/26/2022')"></video>
+                <img src="./assets/Blender/Pictures/Thumbnail/CityinAmong1-01-t.jpeg" onclick="imgclick('CityinAmong1-01.jpeg', 2, 'City in Among us', '8/19/2022')">
+                <img src="./assets/Blender/Pictures/Thumbnail/S22Ultra1_Square-01-t.jpg" onclick="imgclick('S22Ultra1_Square-01.jpg', 0, 'S22 Ultra', '9/5/2022')">
+                <img src="./assets/Blender/Pictures/Thumbnail/USJ-Ivy-01-t.jpg" onclick="imgclick('USJ-Ivy-01.jpg', 2, 'Ivy USJ', '9/18/2022')">
+                <img src="./assets/Blender/Pictures/Thumbnail/Wallpaper_Day-t.png" onclick="imgclick('Wallpaper_Day.png', 1, 'Hair Wallpaper', '11/18/2022')">
+                <img src="./assets/Blender/Pictures/Thumbnail/iCon_Day-t.png" onclick="imgclick('iCon_Day.png', 0, 'Hair dancing', '11/19/2022')">
+                <video src="./assets/Blender/Videos/Original/Particle_Human.mp4" poster="./assets/Blender/Videos/Thumbnail/Particle_Human.jpg" muted autoplay playsinline loop onclick="vidclick('Particle_Human.mp4', 0, 'Particle Human', '11/19/2022')"></video>
+                <video src="./assets/Blender/Videos/Original/Dancing Human.mp4" poster="./assets/Blender/Videos/Thumbnail/Dancing Human.jpg" muted autoplay playsinline loop onclick="vidclick('Dancing Human.mp4', 0, 'Dancing Human', '11/21/2022')"></video>
+                <video src="./assets/Blender/Videos/Original/Dying_Paimon.mp4" poster="./assets/Blender/Videos/Thumbnail/Dying_Paimon.jpg" muted autoplay playsinline loop onclick="vidclick('Dying_Paimon.mp4', 0, 'Paimon', '12/2/2022')"></video>
+                <video src="./assets/Blender/Videos/Original/NightCastle.mp4" poster="./assets/Blender/Videos/Thumbnail/NightCastle.jpg" muted autoplay playsinline loop onclick="vidclick('NightCastle.mp4', 0, 'Night Castle', '1/10/2023')"></video>
+                <img src="./assets/Blender/Pictures/Thumbnail/SeaSideTower3-t.png" onclick="imgclick('SeaSideTower3.png', 0, 'Seaside Tower', '3/9/2023')">
+                <img src="./assets/Blender/Pictures/Thumbnail/Graduation_Magcup1-t.png" onclick="imgclick('Graduation_Magcup1.png', 0, 'Graduation Magcup', '3/19/2023')">
+                <img src="./assets/Blender/Pictures/Thumbnail/Crystal2-t.png" onclick="imgclick('Crystal2.png', 2, 'Crystal', '3/29/2023')">
+                <img src="./assets/Blender/Pictures/Thumbnail/iPhoneXR-t.png" onclick="imgclick('iPhoneXR.png', 0, 'iPhone XR', '4/13/2023')">
+                <img src="./assets/Blender/Pictures/Thumbnail/S22U5-t.jpg" onclick="imgclick('S22U5.jpg', 2, 'S22 Ultra', '5/12/2023')">
+                <img src="./assets/Blender/Pictures/Thumbnail/S23UiCon-t.png" onclick="imgclick('S23UiCon.png', 0, 'S23 Ultra', '5/14/2023')">
+                <img src="./assets/Blender/Pictures/Thumbnail/iPhone11ProGold-t.png" onclick="imgclick('iPhone11ProGold.png', 0, 'iPhone 11 Pro', '5/16/2023')">
+                <img src="./assets/Blender/Pictures/Thumbnail/iPhone14Pro1-t.png" onclick="imgclick('iPhone14Pro1.png', 0, 'iPhone 14 Pro', '5/17/2023')">
+                <img src="./assets/Blender/Pictures/Thumbnail/NothingPhone-t.png" onclick="imgclick('NothingPhone.png', 0, 'Nothing Phone (2)', '7/26/2023')">
+                <img src="./assets/Blender/Pictures/Thumbnail/TimeSpy-t.png" onclick="imgclick('TimeSpy.png', 0, 'Time Spy', '8/6/2023')">
+                <video src="./assets/Blender/Videos/Original/MelonDropVFX1.mp4" poster="./assets/Blender/Videos/Thumbnail/MelonDropVFX.jpg" muted autoplay playsinline loop onclick="vidclick('MelonDropVFX1.mp4', 2, 'Malon drop', '8/20/2023')"></video>
+                <img src="./assets/Blender/Pictures/Thumbnail/VRCChara-t.jpg" onclick="imgclick('VRCChara.jpg', 0, 'Chara', '8/26/2023')">
+                <img src="./assets/Blender/Pictures/Thumbnail/Hologram1-t.png" onclick="imgclick('Hologram1.png', 0, 'Hologram', '10/3/2023')">
+                <img src="./assets/Blender/Pictures/Thumbnail/icon1-t.png" onclick="imgclick('icon1.png', 0, 'Pixel Camera Unit', '10/16/2023')">
+                <img src="./assets/Blender/Pictures/Thumbnail/Donut_2023_edited.jpg" onclick="imgclick('Donut_2023_edited.jpg', 0, 'Donut 2023 Remake', '11/19/2023')">
+                <img id="blenderbottom" style="height:0;" src="./assets/Blender/Pictures/Thumbnail/blankimg.png">
+            </div>
+                <div id="blenderselectimgback" class="blenderselectimgback-hide"></div>
+            <div class="blenderselect-hide" id="blenderselect">
+                <img id="blenderselectimg" src="./assets/Blender/Pictures/Thumbnail/blankimg.png" onclick="imgclick('return')"/>
+                <video id="blenderselectvid" src="" poster="./assets/Blender/Pictures/Thumbnail/blankimg.png" muted autoplay playsinline loop onclick="vidclick('return')"></video>
+                <text class="blenderselecttext1" id="blenderselecttext1"></text>
+                <text class="blenderselecttext2" id="blenderselecttext2"></text>
+            </div>
+        </div>
+    </div>
+          <script src="./main.js"></script>
+</body>
+</html>
