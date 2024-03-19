@@ -134,6 +134,7 @@ function imgclick(img, mode, title, date){
         blenderselect.style.height = "0";
         blenderselect.style.width = "0";
         imgurl = './assets/Blender/Pictures/Thumbnail/blankimg.png';
+        blenderselectimg.src = imgurl;
         blenderselectimgback.className = "blenderselectimgback-hide";
         blenderselect.className = "blenderselect-hide";
     }

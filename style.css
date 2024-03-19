@@ -23,6 +23,69 @@ text, a{
     overflow: hidden;
 }
 
+.menu {
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: #444 0.7vh 0.7vh 1.5vh, #fff -0.7vh -0.7vh 1.5vh;
+    border: #999 solid 0.15vh;
+    backdrop-filter: blur(0.8vh);
+    -webkit-backdrop-filter: blur(0.8vh);
+    bottom: 0;
+    left: 0;
+    border-radius: min(7.2vw, max(3vh));
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.menusub, .menusub-clicked {
+    border: #555 solid 0.05vh;
+    backdrop-filter: blur(5vh);
+    -webkit-backdrop-filter: blur(5vh);
+    aspect-ratio: 1;
+    border-radius: min(5.2vw, max(2vh));
+    transition: box-shadow 0.1s;
+}
+
+.menusub {
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 
+    #222 1vh 1vh 2vh ,
+    #fff -0.8vh -0.8vh 2vh,
+    inset 1.7vh 1.7vh 3vh transparent,
+    inset -1.7vh -1.7vh 4vh transparent;
+}
+
+.menusub-clicked {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow:
+    0.8vh 0.8vh 2vh transparent,
+    -0.8vh -0.8vh 2vh transparent,
+    inset #111 0.7vh 0.7vh 1.7vh,
+    inset #fff -0.7vh -0.7vh 1.7vh;
+}
+
+.sns, .snshide-1, .snshide-2 {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: #333 1.5vw 1.5vw 3vw,#ddd -1.5vw -1.5vw 2.5vw;
+    height: 35%;
+    width: 90%;
+    max-width: 70vh;
+    right: 0;
+    position: absolute;
+    border-radius: min(7.2vw, max(3vh));
+    border: #777 solid 0.05vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.sns {
+    left: 0;
+    backdrop-filter: blur(1.2vh);
+    -webkit-backdrop-filter: blur(1.2vh);
+}
 
 .menu div{
     display: flex;
@@ -42,8 +105,6 @@ text, a{
     font-size: min(3vw, max(1.5vh));
 }
 
-
-
 .sns div::after, .snshide-1 div::after, .snshide-2 div::after{
     content: "";
     position: absolute;
@@ -61,7 +122,6 @@ text, a{
     align-items: center;
     height: 25%;
 }
-
 
 .sns div img, .snshide-1 div img, .snshide-2 div img{
     height: 60%;
@@ -92,7 +152,6 @@ text, a{
     margin: 2vh;
 }
 
-
 .backgroundimage{
     border: none;
     height: 100%;
@@ -105,11 +164,48 @@ text, a{
     transition: 0.3s;
 }
 
+.githubtab {
+    height: 70%;
+    top: 0;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+.githubtab-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.githubtab-piece {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    aspect-ratio: 47/50;
+    position: relative;
+    border-radius: min(7.2vw, max(3vh));
+    border: #777 solid 0.05vh;
+    overflow: hidden;
+}
+
 .githubtab-piece a{
     background-color: transparent;
     height: 100%;
     width: 100%;
     z-index: 1;
+}
+
+.githubtab-piece text, .githubtabhide-left text, .githubtabhide-right text {
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 10%;
+    width: 100%;
+    padding: 10% 0;
+    bottom: 0;
+    position: absolute;
+    border-top: #777 solid 0.05vh;
+    backdrop-filter: blur(4vh);
+    -webkit-backdrop-filter: blur(4vh);
+    white-space: nowrap;
 }
 
 .githubtab-piece img, .githubtabhide img, .githubtabhide-right img{
@@ -120,8 +216,54 @@ text, a{
     transition: 0.3s;
 }
 
+.githubtab-piece-blank {
+    aspect-ratio: 47/50;
+    position: relative;
+    overflow: hidden;
+}
+
+.githubtabhide-left, .githubtabhide-right {
+    height: 70%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
 .gitblank{
     display: none;
+}
+
+.blendertab-container, .blendertab-container-hide-1, .blendertab-container-hide-2{
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: #333 1.5vw 1.5vw 3vw,#ddd -1.5vw -1.5vw 2.5vw;
+    height: 70%;
+    position: absolute;
+    border-radius: min(8.2vw, max(10vh));
+    border: #777 solid 0.05vh;
+    backdrop-filter: blur(2vh);
+    -webkit-backdrop-filter: blur(2vh);
+    overflow: hidden;
+}
+
+.blendertab-text, .blendertab-text-top {
+    left: 0;
+    text-align: left;
+    font-size: min(7vw, max(2.3vh));
+    white-space: nowrap;
+    z-index: 2;
+    transition: 0.6s;
+}
+
+.blendertab {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: #333 1.5vw 1.5vw 3vw,#ddd -1.5vw -1.5vw 2.5vw;
+    width: 100%;
+    right: 0;
+    left: 0;
+    position: relative;
+    overflow:scroll;
+    display: flex;
+    gap: 0.3vw;
 }
 
 .blendertab-shadow, .blendertab-shadow-top{
@@ -141,18 +283,15 @@ text, a{
     object-fit: cover;
 }
 
-.blenderselect-hide{
+.blenderselect, .blenderselect-hide {
     position: absolute;
     max-height: 120vw;
     max-width: 40vh;
-    width: 0;
-    height: 0;
     margin: auto;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: -1;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -163,33 +302,28 @@ text, a{
 
 .blenderselect{
     background-color: rgba(255, 255, 255, 1);
-    position: absolute;
-    max-height: 120vw;
-    max-width: 40vh;
     width: 90%;
-    margin: auto;
+    z-index: 3;
+}
+
+.blenderselect-hide{
+    width: 0;
+    height: 0;
+    z-index: -1;
+}
+
+.blenderselectimgback, .blenderselectimgback-hide, #blenderselectimg, #blenderselectvid {
+    width: 100%;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 3;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    aspect-ratio: 1;
-    box-shadow: #121212 3vw 3vw 5vw,#ddd -3vw -3vw 5vw;
-    transition: 0.5s;
 }
 
 .blenderselectimgback{
     background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
     height: 100%;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     z-index: 0;
     backdrop-filter: blur(1vh);
     -webkit-backdrop-filter: blur(1vh);
@@ -200,11 +334,6 @@ text, a{
 .blenderselectimgback-hide{
     position: absolute;
     height: 100%;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     z-index: -1;
     transition: 0.3s;
 }
@@ -212,11 +341,6 @@ text, a{
 #blenderselectimg, #blenderselectvid{
     position: relative;
     margin: auto auto 0 auto;
-    width: 100% !important;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     display: block;
 }
 
@@ -238,434 +362,179 @@ text, a{
     font-size: min(4vw, max(2vh));
 }
 
-
 @media screen and (orientation:portrait){
     .menu{
-        background-color: rgba(255, 255, 255, 0.4);
-        box-shadow: #444 0.7vh 0.7vh 1.5vh, #fff -0.7vh -0.7vh 1.5vh;
-        border: #999 solid 0.15vh;
-        backdrop-filter: blur(0.8vh);
-        -webkit-backdrop-filter: blur(0.8vh);
         height: 23vw;
         max-height: 12.7vh;
         aspect-ratio: 4/1;
-        bottom: 0;
         right: 0;
-        left: 0;
         margin: 0 auto 2.75vh;
-        border-radius: min(7.2vw, max(3vh));
-        display: flex;
-        position: absolute;
-        justify-content: space-between;
-        align-items: center;
         flex-direction: row;
-        transition: 0.3s;
     }
 
     .menusub{
-        background-color: rgba(0, 0, 0, 0.2);
-        border: #555 solid 0.05vh;
-        box-shadow: 
-        #222 1vh 1vh 2vh ,
-        #fff -0.8vh -0.8vh 2vh,
-        inset 1.7vh 1.7vh 3vh transparent,
-        inset -1.7vh -1.7vh 4vh transparent;
-        backdrop-filter: blur(5vh);
-        -webkit-backdrop-filter: blur(5vh);
         height: 75%;
-        aspect-ratio: 1;
         margin: 0 3.5%;
-        border-radius: min(5.2vw, max(2vh));
-        transition: box-shadow 0.1s;
     }
     
     .menusub-clicked{
-        background-color: rgba(0, 0, 0, 0);
-        border: #555 solid 0.05vh;
-        box-shadow:
-        0.8vh 0.8vh 2vh transparent,
-        -0.8vh -0.8vh 2vh transparent,
-        inset #111 0.7vh 0.7vh 1.7vh,
-        inset #fff -0.7vh -0.7vh 1.7vh;
-        backdrop-filter: blur(5vh);
-        -webkit-backdrop-filter: blur(5vh);
         height: 59%;
-        aspect-ratio: 1;
         margin: 0 3.5%;
-        border-radius: min(5.2vw, max(2vh));
-        transition: box-shadow 0.1s;
         padding: 2%;
         overflow: hidden;
     }
 
-    .sns{
-        background-color: rgba(255, 255, 255, 0.2);
-        box-shadow: #333 1.5vw 1.5vw 3vw,#ddd -1.5vw -1.5vw 2.5vw;
-        height: 35%;
-        width: 90%;
-        max-width: 70vh;
-        right: 0;
-        left: 0;
+    .sns, .snshide-1, .snshide-2{
         margin: 7vh auto 0;
-        position: absolute;
-        border-radius: min(7.2vw, max(3vh));
-        border: #777 solid 0.05vh;
-        backdrop-filter: blur(1.2vh);
-        -webkit-backdrop-filter: blur(1.2vh);
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
     }
     
-    .snshide-1{
-        background-color: rgba(255, 255, 255, 0.2);
-        box-shadow: #333 1.5vw 1.5vw 3vw,#ddd -1.5vw -1.5vw 2.5vw;
-        height: 35%;
-        width: 90%;
-        max-width: 70vh;
-        right: 0;
+    .snshide-1, .githubtabhide-left{
         left: -200vw;
-        margin: 7vh auto 0;
-        position: absolute;
-        border-radius: min(7.2vw, max(3vh));
-        border: #777 solid 0.05vh;
-        backdrop-filter: blur(1.2vh);
-        -webkit-backdrop-filter: blur(1.2vh);
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
     }
     
     .snshide-2{
-        background-color: rgba(255, 255, 255, 0.2);
-        box-shadow: #333 1.5vw 1.5vw 3vw,#ddd -1.5vw -1.5vw 2.5vw;
-        height: 35%;
-        width: 90%;
-        max-width: 70vh;
-        right: 0;
         left: -400vw;
-        margin: 7vh auto 0;
-        position: absolute;
-        border-radius: min(7.2vw, max(3vh));
-        border: #777 solid 0.05vh;
-        backdrop-filter: blur(1.2vh);
-        -webkit-backdrop-filter: blur(1.2vh);
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
     }
 
     .sns, .snshide-1, .snshide-2, .blendertab-container, .blendertab-container-hide-1, .blendertab-container-hide-2, .githubtab, .githubtabhide-left, .githubtabhide-right{
         transition: 0.4s;
     }
 
-    .githubtab{
-        height: 70%;
+    .githubtab, .githubtabhide-left, .githubtabhide-right {
         width: 90%;
         max-width: 100vh;
+        margin: 7vh auto 0;
+        flex-direction: column;
+    }
+
+    .githubtab{
         right: 0;
         left: 0;
-        top: 0;
-        margin: 7vh auto 0;
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
     }
 
     .githubtab-row{
-        display: flex;
         flex-direction: row;
-        justify-content: space-around;
         height: 28%;
     }
 
     .githubtab-piece{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         box-shadow: #333 1.5vw 1.5vw 3vw,#ddd -1.5vw -1.5vw 2.5vw;
         height: 100%;
-        aspect-ratio: 47/50;
-        position: relative;
-        border-radius: min(7.2vw, max(3vh));
-        border: #777 solid 0.05vh;
-        overflow: hidden;
     }
 
     .githubtab-piece text, .githubtabhide-left text, .githubtabhide-right text{
-        background-color: rgba(255, 255, 255, 0.6);
-        height: 10%;
-        width: 100%;
-        padding: 10% 0;
-        bottom: 0;
         text-align: center;
-        position: absolute;
-        border-top: #777 solid 0.05vh;
         font-size: min(3vw, max(1.4vh));
-        backdrop-filter: blur(4vh);
-        -webkit-backdrop-filter: blur(4vh);
-        white-space: nowrap;
     }
 
-.githubtab-piece-blank{
-    height: 100%;
-    aspect-ratio: 47/50;
-    position: relative;
-    overflow: hidden;
-}
+    .githubtab-piece-blank{
+        height: 100%;
+    }
     
-
-.githubtabhide-left{
-    height: 70%;
-    width: 90%;
-    max-width: 100vh;
-    right: 0;
-    left: -200vw;
-    top: 0;
-    margin: 7vh auto 0;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.githubtabhide-right{
-    height: 70%;
-    width: 90%;
-    max-width: 100vh;
-    right: -200vw;
-    left: 0;
-    top: 0;
-    margin: 7vh auto 0;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.blendertab-container{
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: #333 1.5vw 1.5vw 3vw,#ddd -1.5vw -1.5vw 2.5vw;
-    height: 70%;
-    width: 90%;
-    max-width: 70vh;
-    right: 0;
-    left: 0;
-    margin: 7vh auto 0;
-    position: absolute;
-    border-radius: min(8.2vw, max(10vh));
-    border: #777 solid 0.05vh;
-    backdrop-filter: blur(2vh);
-    -webkit-backdrop-filter: blur(2vh);
-    overflow: hidden;
-}
-
-.blendertab-container-hide-1{
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: #333 1.5vw 1.5vw 3vw,#ddd -1.5vw -1.5vw 2.5vw;
-    height: 70%;
-    width: 90%;
-    max-width: 70vh;
-    right: -200vw;
-    left: 0;
-    margin: 7vh auto 0;
-    position: absolute;
-    border-radius: min(8.2vw, max(10vh));
-    border: #777 solid 0.05vh;
-    backdrop-filter: blur(2vh);
-    -webkit-backdrop-filter: blur(2vh);
-    overflow: hidden;
-}
-
-.blendertab-container-hide-2{
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: #333 1.5vw 1.5vw 3vw,#ddd -1.5vw -1.5vw 2.5vw;
-    height: 70%;
-    width: 90%;
-    max-width: 70vh;
-    right: -400vw;
-    left: 0;
-    margin: 7vh auto 0;
-    position: absolute;
-    border-radius: min(8.2vw, max(10vh));
-    border: #777 solid 0.05vh;
-    backdrop-filter: blur(2vh);
-    -webkit-backdrop-filter: blur(2vh);
-    overflow: hidden;
-}
-
-.blendertab-text{
-    position: absolute;
-    width: 100%;
-    left: 0;
-    padding: 5%;
-    text-align: left;
-    color: white;
-    font-size: min(7vw, max(2.3vh));
-    white-space: nowrap;
-    z-index: 2;
-    transition: 0.6s;
-}
-
-.blendertab-text-top{
-    position: absolute;
-    width: 100%;
-    left: 0;
-    padding: 5%;
-    text-align: left;
-    color: black;
-    font-size: min(7vw, max(2.3vh));
-    white-space: nowrap;
-    z-index: 2;
-    transition: 0.6s;
-}
-
-.blendertab{
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: #333 1.5vw 1.5vw 3vw,#ddd -1.5vw -1.5vw 2.5vw;
-    height: 100%;
-    width: 100%;
-    right: 0;
-    left: 0;
-    position: relative;
-    overflow:scroll;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0.3vw;
-    justify-content: left;
-}
-
-.blendertab-shadow{
-    opacity: 1;
-}
-
-.blendertab-shadow-top{
-    opacity: 0;
-}
-
-.blenderblank {
-    width: 100% !important;
-}
-
-.blenderselect-hide, .blenderselect{
-    border-radius: 6vw;
-}
+    .githubtabhide-left {
+        right: 0;
+        top: 0;
     }
+    
+    .githubtabhide-right{
+        top: 0;
+        left: 0;
+    }
+    
+    .blendertab-container, .blendertab-container-hide-1, .blendertab-container-hide-2 {
+        width: 90%;
+        max-width: 70vh;
+        left: 0;
+        margin: 7vh auto 0;
+    }
+    
+    .blendertab-container{
+        right: 0;
+        border-radius: min(8.2vw, max(10vh));
+    }
+    
+    .blendertab-container-hide-1, .githubtabhide-right {
+        right: -200vw;
+    }
+    
+    .blendertab-container-hide-2{
+        right: -400vw;
+    }
+    
+    .blendertab-text, .blendertab-text-top {
+        position: absolute;
+        width: 100%;
+        padding: 5%;
+    }
+    
+    .blendertab-text{
+        color: white;
+    }
+    
+    .blendertab-text-top{
+        color: black;
+    }
+    
+    .blendertab{
+        height: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    
+    .blendertab-shadow{
+        opacity: 1;
+    }
+    
+    .blendertab-shadow-top{
+        opacity: 0;
+    }
+    
+    .blenderblank {
+        width: 100% !important;
+    }
+    
+    .blenderselect-hide, .blenderselect{
+        border-radius: 6vw;
+    }
+}
 
 @media screen and (orientation:landscape){
     .menu{
-        background-color: rgba(255, 255, 255, 0.4);
-        box-shadow: #444 0.7vh 0.7vh 1.5vh, #fff -0.7vh -0.7vh 1.5vh;
-        border: #999 solid 0.15vh;
-        backdrop-filter: blur(0.8vh);
-        -webkit-backdrop-filter: blur(0.8vh);
         width: 12vw;
         max-width: 10vh;
         aspect-ratio: 2/7;
-        bottom: 0;
         top: 0;
-        left: 0;
         margin: auto 0 auto 3.5vh;
-        border-radius: min(7.2vw, max(3vh));
-        display: flex;
-        position: absolute;
-        justify-content: space-between;
         flex-direction: column;
-        align-items: center;
-        transition: 0.3s;
     }
     
     .menusub{
-        background-color: rgba(0, 0, 0, 0.2);
-        border: #555 solid 0.05vh;
-        box-shadow: 
-        #222 1vh 1vh 2vh ,
-        #fff -0.8vh -0.8vh 2vh,
-        inset 1.7vh 1.7vh 3vh transparent,
-        inset -1.7vh -1.7vh 4vh transparent;
-        backdrop-filter: blur(5vh);
-        -webkit-backdrop-filter: blur(5vh);
         width: 75%;
-        aspect-ratio: 1;
         margin: 12% 0;
-        border-radius: min(5.2vw, max(2vh));
-        transition: box-shadow 0.1s;
     }
     
     .menusub-clicked{
-        background-color: rgba(0, 0, 0, 0);
-        border: #555 solid 0.05vh;
-        box-shadow:
-        0.8vh 0.8vh 2vh transparent,
-        -0.8vh -0.8vh 2vh transparent,
-        inset #111 0.7vh 0.7vh 1.7vh,
-        inset #fff -0.7vh -0.7vh 1.7vh;
-        backdrop-filter: blur(5vh);
-        -webkit-backdrop-filter: blur(5vh);
         width: 65%;
-        aspect-ratio: 1;
         margin: 12% 0;
-        border-radius: min(5.2vw, max(2vh));
-        transition: box-shadow 0.1s;
         padding: 4%;
     }
 
     .sns{
-        background-color: rgba(255, 255, 255, 0.2);
-        box-shadow: #333 1.5vw 1.5vw 3vw,#ddd -1.5vw -1.5vw 2.5vw;
-        height: 35%;
-        width: 90%;
-        max-width: 70vh;
-        right: 0;
-        left: 0;
         top: 0;
         margin: 5vw auto;
-        position: absolute;
-        border-radius: min(7.2vw, max(3vh));
-        border: #777 solid 0.05vh;
-        backdrop-filter: blur(1.2vh);
-        -webkit-backdrop-filter: blur(1.2vh);
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
     }
     
     .snshide-1{
-        background-color: rgba(255, 255, 255, 0.2);
-        box-shadow: #333 1.5vw 1.5vw 3vw,#ddd -1.5vw -1.5vw 2.5vw;
-        height: 35%;
-        width: 90%;
-        max-width: 70vh;
-        right: 0;
         left: 0;
         top: -200vh;
         margin: 5vw auto;
-        position: absolute;
-        border-radius: min(7.2vw, max(3vh));
-        border: #777 solid 0.05vh;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
     }
     
     .snshide-2{
-        background-color: rgba(255, 255, 255, 0.2);
-        box-shadow: #333 1.5vw 1.5vw 3vw,#ddd -1.5vw -1.5vw 2.5vw;
-        height: 35%;
-        width: 90%;
-        max-width: 70vh;
-        right: 0;
         left: 0;
         top: -400vh;
         margin: 5vw auto;
-        position: absolute;
-        border-radius: min(7.2vw, max(3vh));
-        border: #777 solid 0.05vh;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
     }
 
     .sns, .snshide-1, .snshide-2, .blendertab-container, .blendertab-container-hide-1, .blendertab-container-hide-2, .githubtab, .githubtabhide-left, .githubtabhide-right{
@@ -673,220 +542,107 @@ text, a{
     }
 
     .githubtab{
-        height: 70%;
         width: 75%;
         max-height: 70vw;
         max-width: 160vh;
         right: calc((50% - 42vw));
-        top: 0;
         bottom: 0;
         margin: auto;
-        position: absolute;
-        display: flex;
         flex-direction: row;
-        justify-content: space-between;
+    }
+    .githubtab-row{
+        flex-direction: column;
+        width: 24%;
+        max-width: 24vh;
+        height: 95%;
+        margin: auto 0;
     }
     
-.githubtab-row{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 24%;
-    max-width: 24vh;
-    height: 95%;
-    margin: auto 0;
-}
+    .githubtab-piece{
+        box-shadow: #333 1vh 1vh 2vh,#ddd -1vh -1vh 2vh;
+        width: 100%;
+    }
+    
+    .githubtab-piece text, .githubtabhide-left text, .githubtabhide-right text{
+        font-size: min(3vw, max(1.8vh));
+    }
+    
+    .githubtab-piece-blank{
+        width: 100%;
+    }
+    
+    .githubtabhide-left, .githubtabhide-right {
+        width: 75%;
+        max-height: 70vw;
+        max-width: 160vh;
+        right: calc((50% - 42vw));
+        bottom: 0;
+        margin: auto;
+        flex-direction: row;
+    }
+    
+    .githubtabhide-left{
+        top: -200vh;
+    }
 
-.githubtab-piece{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: #333 1vh 1vh 2vh,#ddd -1vh -1vh 2vh;
-    width: 100%;
-    aspect-ratio: 47/50;
-    position: relative;
-    border-radius: min(7.2vw, max(3vh));
-    border: #777 solid 0.05vh;
-    overflow: hidden;
-}
-
-.githubtab-piece text, .githubtabhide-left text, .githubtabhide-right text{
-    background-color: rgba(255, 255, 255, 0.6);
-    height: 10%;
-    width: 100%;
-    padding: 10% 0;
-    bottom: 0;
-    position: absolute;
-    border-top: #777 solid 0.05vh;
-    font-size: min(3vw, max(1.8vh));
-    backdrop-filter: blur(4vh);
-    -webkit-backdrop-filter: blur(4vh);
-    white-space: nowrap;
-}
-
-.githubtab-piece-blank{
-    width: 100%;
-    aspect-ratio: 47/50;
-    position: relative;
-    overflow: hidden;
-}
-
-
-.githubtabhide-left{
-    height: 70%;
-    width: 75%;
-    max-height: 70vw;
-    max-width: 160vh;
-    right: calc((50% - 42vw));
-    top: -200vh;
-    bottom: 0;
-    margin: auto;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.githubtabhide-right{
-    height: 70%;
-    width: 75%;
-    max-height: 70vw;
-    max-width: 160vh;
-    right: calc((50% - 42vw));
-    top: 200vh;
-    bottom: 0;
-    margin: auto;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.blendertab-container{
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: #333 1.5vw 1.5vw 3vw,#ddd -1.5vw -1.5vw 2.5vw;
-    height: 70%;
-    width: 75%;
-    max-height: 70vw;
-    max-width: 160vh;
-    right: calc((50% - 42vw));
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    position: absolute;
-    border-radius: min(6.2vw, max(5vh));
-    border: #777 solid 0.05vh;
-    backdrop-filter: blur(2vh);
-    -webkit-backdrop-filter: blur(2vh);
-    overflow: hidden;
-}
-
-.blendertab-container-hide-1{
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: #333 1.5vw 1.5vw 3vw,#ddd -1.5vw -1.5vw 2.5vw;
-    height: 70%;
-    width: 75%;
-    max-height: 70vw;
-    max-width: 160vh;
-    right: calc((50% - 42vw));
-    top: 200vh;
-    bottom: 0;
-    margin: auto;
-    position: absolute;
-    border-radius: min(8.2vw, max(10vh));
-    border: #777 solid 0.05vh;
-    backdrop-filter: blur(2vh);
-    -webkit-backdrop-filter: blur(2vh);
-    overflow: hidden;
-}
-
-.blendertab-container-hide-2{
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: #333 1.5vw 1.5vw 3vw,#ddd -1.5vw -1.5vw 2.5vw;
-    height: 70%;
-    width: 75%;
-    max-height: 70vw;
-    max-width: 160vh;
-    right: calc((50% - 42vw));
-    top: 400vh;
-    bottom: 0;
-    margin: auto;
-    position: absolute;
-    border-radius: min(8.2vw, max(10vh));
-    border: #777 solid 0.05vh;
-    backdrop-filter: blur(2vh);
-    -webkit-backdrop-filter: blur(2vh);
-    overflow: hidden;
-}
-
-.blendertab-text, .blendertab-text-top{
-    display: block;
-    position: relative;
-    width: auto;
-    top: 0;
-    left: 0;
-    margin: 4vh 5%;
-    text-align: left;
-    color: black;
-    font-size: min(7vw, max(2.4vh));
-    white-space: nowrap;
-    z-index: 2;
-    transition: 0.6s;
-}
-
-.blendertab{
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: #333 1.5vw 1.5vw 3vw,#ddd -1.5vw -1.5vw 2.5vw;
-    height: 95%;
-    width: 100%;
-    right: 0;
-    left: 0;
-    position: relative;
-    overflow:scroll;
-    display: flex;
-    flex-direction: column;
-    flex-wrap:wrap-reverse;
-    gap: 0.3vw;
-    justify-content: flex-start;
-}
-
-.blendertab img, .blendertab video{
-    height: calc(100% / 5.05);
-    width: auto;
-}
-
-.blenderblank{
-    height: 0 !important;
-    position: absolute !important;
-}
-
-.blendertab-shadow, .blendertab-shadow-top{
-    opacity: 0;
-}
-
-
-.blenderselect{
-    background-color: rgba(255, 255, 255, 1);
-    position: absolute;
-    max-height: 120vw;
-    max-width: 40vh;
-    width: 90%;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 3;
-    display: flex;
-    flex-direction: column;
-    border-radius:4vh;
-    overflow: hidden;
-    aspect-ratio: 1;
-    box-shadow: #121212 2vh 2vh 4vh,#ddd -2vh -2vh 4vh;
-    transition: 0.5s;
-}
-
-.blenderselect-hide, .blenderselect{
-    border-radius:4vh;
-}
+    .blendertab-container, .blendertab-container-hide-1, .blendertab-container-hide-2 {
+        width: 75%;
+        max-height: 70vw;
+        max-width: 160vh;
+        right: calc((50% - 42vw));
+        bottom: 0;
+        margin: auto;
+    }
+    
+    .blendertab-container{
+        top: 0;
+        border-radius: min(6.2vw, max(5vh));
+    }
+    
+    .githubtabhide-right, .blendertab-container-hide-1{
+        top: 200vh;
+    }
+    
+    .blendertab-container-hide-2{
+        top: 400vh;
+    }
+    
+    .blendertab-text, .blendertab-text-top{
+        display: block;
+        position: relative;
+        width: auto;
+        top: 0;
+        margin: 4vh 5%;
+        color: black;
+    }
+    
+    .blendertab{
+        height: 95%;
+        flex-direction: column;
+        flex-wrap:wrap-reverse;
+        justify-content: flex-start;
+    }
+    
+    .blendertab img, .blendertab video{
+        height: calc(100% / 5.05);
+        width: auto;
+    }
+    
+    .blenderblank{
+        height: 0 !important;
+        position: absolute !important;
+    }
+    
+    .blendertab-shadow, .blendertab-shadow-top{
+        opacity: 0;
+    }
+    
+    .blenderselect{
+        overflow: hidden;
+        box-shadow: #121212 2vh 2vh 4vh,#ddd -2vh -2vh 4vh;
+    }
+    
+    .blenderselect-hide, .blenderselect{
+        border-radius:4vh;
+    }
 }
